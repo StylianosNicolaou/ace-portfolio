@@ -35,17 +35,6 @@ export default function Hero() {
           ACE is a digital studio by Stylianos & Viktorya. We create sleek,
           animated, performance-first websites for modern businesses.
         </motion.p>
-
-        <Magnetic>
-          <motion.a
-            href="#work"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.97 }}
-            className="mt-10 inline-block px-6 py-3 text-lg font-medium bg-white/90 text-black rounded-full shadow-md hover:bg-white transition backdrop-blur-md"
-          >
-            See Our Work
-          </motion.a>
-        </Magnetic>
       </motion.div>
     </section>
   );
