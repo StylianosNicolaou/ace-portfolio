@@ -12,7 +12,7 @@ export default function ContactPage() {
 
       <main
         className="pt-40 px-6 pb-20 min-h-screen bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: 'url("/bg2.jpg")' }}
+        style={{ backgroundImage: 'url("/backgrounds/bg2.jpg")' }}
       >
         <Navbar />
         <Contact />

@@ -22,9 +22,12 @@ export default function Contact() {
   };
 
   return (
-    <SectionWrapper id="contact" className="relative z-10 text-white">
+    <SectionWrapper
+      id="contact"
+      className="relative z-10 text-white bg-white/15 backdrop-blur-md"
+    >
       {/* Glass overlay for background readability */}
-      <div className="absolute inset-0 bg-black/30 backdrop-blur-md rounded-3xl z-[-1]" />
+      <div className="bg-white/15 backdrop-blur-md rounded-3xl" />
 
       {/* Heading with animation */}
       <motion.h2
@@ -122,43 +125,6 @@ export default function Contact() {
           Send Message
         </button>
       </motion.form>
-
-      {/* Social Icons */}
-      <motion.div
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.4, duration: 0.8 }}
-        className="flex justify-center gap-6 mt-12"
-      >
-        <Magnetic>
-          <a
-            href="https://github.com/your-profile"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-xl text-body hover:text-glow transition"
-          >
-            <FaGithub />
-          </a>
-        </Magnetic>
-        <Magnetic>
-          <a
-            href="https://linkedin.com/in/your-profile"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-xl text-body hover:text-glow transition"
-          >
-            <FaLinkedinIn />
-          </a>
-        </Magnetic>
-        <Magnetic>
-          <a
-            href="mailto:hello@yourdomain.com"
-            className="text-xl text-body hover:text-glow transition"
-          >
-            <FaEnvelope />
-          </a>
-        </Magnetic>
-      </motion.div>
     </SectionWrapper>
   );
 }

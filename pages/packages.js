@@ -1,4 +1,5 @@
 "use client";
+import Head from "next/head";
 
 import { motion } from "framer-motion";
 import Header from "../components/Navbar";
@@ -13,24 +14,29 @@ const fadeIn = {
 
 export default function PackagesPage() {
   return (
-    <div
-      className="relative bg-cover bg-center bg-no-repeat min-h-screen text-glow"
-      style={{ backgroundImage: `url('/bg2.jpg')` }}
-    >
-      {/* Full content on top of glossy background */}
-      <div className="relative z-10">
-        <motion.main
-          id="packages"
-          variants={fadeIn}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true, amount: 0.3 }}
-        >
-          <Navbar />
-          <Packages />
-          <Footer />
-        </motion.main>
+    <>
+      <Head>
+        <title>Packages | ACE</title>
+        <meta name="description" content="Packages and prices of ACE team." />
+      </Head>
+      <div
+        className="bg-white/15 backdrop-blur-md"
+        style={{ backgroundImage: `url('/bg2.jpg')` }}
+      >
+        {/* Full content on top of glossy background */}
+        <div className="relative z-10 bg-white/15 backdrop-blur-md">
+          <motion.main
+            id="packages"
+            variants={fadeIn}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.3 }}
+          >
+            <Navbar />
+            <Packages />
+          </motion.main>
+        </div>
       </div>
-    </div>
+    </>
   );
 }

@@ -86,8 +86,8 @@ export default function PackagesPage() {
   return (
     <motion.div
       id="packages"
-      className="min-h-screen w-full bg-fixed bg-cover bg-center bg-no-repeat py-20 text-glow"
-      style={{ backgroundImage: "url('/public/bg2.jpg')" }}
+      className="bg-white/15 backdrop-blur-md min-h-screen w-full bg-cover py-10 text-glow"
+      style={{ backgroundImage: "url('/backgrounds/bg2.jpg')" }}
       variants={fadeIn}
       initial="hidden"
       whileInView="show"

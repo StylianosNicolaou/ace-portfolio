@@ -43,7 +43,7 @@ export default function MyApp({ Component, pageProps }) {
             }`}
             style={{ backgroundImage: "url('/backgrounds/bg2.jpg')" }}
           />
-          <div className="absolute inset-0 bg-black/5" />
+          <div className="absolute inset-0 bg-white/5 backdrop-blur-md" />
         </div>
 
         <CustomCursor />

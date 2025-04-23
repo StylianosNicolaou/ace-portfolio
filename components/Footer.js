@@ -38,7 +38,7 @@ export default function Footer() {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
-      className="w-full mt-32 px-6 py-10 bg-white/5 backdrop-blur-md border-t border-white/10 text-white/80 text-sm"
+      className="w-full mt-32 px-6 py-10 bg-white/5 backdrop-blur-md text-sm"
     >
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
         <p className="text-body text-center md:text-left">
