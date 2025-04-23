@@ -1,0 +1,259 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  cursor: none !important;
+}
+
+body {
+  @apply font-sans bg-transparent scroll-smooth;
+}
+
+.active-link {
+  @apply text-white font-semibold before:w-full;
+}
+
+.text-heading {
+  color: #2e1a47; /* Midnight Purple */
+}
+
+.text-body {
+  color: #101d42; /* Deep Navy */
+}
+
+.text-subtle {
+  color: #aab8d8; /* Muted bluish gray */
+}
+
+.text-muted {
+  color: #94a3b8; /* Tailwind slate-400 for subtle UI */
+}
+
+.text-glow {
+  color: #2e1a47;
+  text-shadow: 0 1px 2px rgba(16, 29, 66, 0.4); /* Navy glow */
+}
+
+/* Accent/interactive options */
+.text-primary {
+  color: #5ab9ea; /* Bright cyan from your scheme */
+}
+
+.text-secondary {
+  color: #84ceeb;
+}
+
+.text-accent {
+  color: #c1c8e4;
+}
+
+.text-purple {
+  color: #8860d0;
+}
+
+.text-soft {
+  color: #c1c8e4;
+}
+
+@keyframes floatSlow {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+@keyframes floatMedium {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-40px);
+  }
+}
+@keyframes floatFast {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-60px);
+  }
+}
+
+.animate-float-slow {
+  animation: floatSlow 12s ease-in-out infinite;
+}
+.animate-float-medium {
+  animation: floatMedium 10s ease-in-out infinite;
+}
+.animate-float-fast {
+  animation: floatFast 8s ease-in-out infinite;
+}
+
+@keyframes floatXY1 {
+  0%,
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(15px, -10px) rotate(5deg);
+  }
+  50% {
+    transform: translate(0, 20px) rotate(0deg);
+  }
+  75% {
+    transform: translate(-15px, -10px) rotate(-5deg);
+  }
+}
+@keyframes floatXY2 {
+  0%,
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  33% {
+    transform: translate(-20px, 15px) rotate(2deg);
+  }
+  66% {
+    transform: translate(20px, -15px) rotate(-2deg);
+  }
+}
+@keyframes floatXY3 {
+  0%,
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  40% {
+    transform: translate(10px, -30px) rotate(1deg);
+  }
+  80% {
+    transform: translate(-10px, 20px) rotate(-1deg);
+  }
+}
+
+.animate-floatxy-1 {
+  animation: floatXY1 30s ease-in-out infinite;
+}
+.animate-floatxy-2 {
+  animation: floatXY2 25s ease-in-out infinite;
+}
+.animate-floatxy-3 {
+  animation: floatXY3 35s ease-in-out infinite;
+}
+
+@keyframes pulseBlob {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.08);
+  }
+}
+.animate-pulse-blob {
+  animation: pulseBlob 6s ease-in-out infinite;
+}
+
+@keyframes wander1 {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  25% {
+    transform: translate(80px, -40px);
+  }
+  50% {
+    transform: translate(20px, 60px);
+  }
+  75% {
+    transform: translate(-60px, -20px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+@keyframes wander2 {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  30% {
+    transform: translate(-50px, 80px);
+  }
+  60% {
+    transform: translate(70px, -50px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+@keyframes wander3 {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  40% {
+    transform: translate(-80px, -40px);
+  }
+  70% {
+    transform: translate(60px, 50px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+.animate-wander-1 {
+  animation: wander1 60s ease-in-out infinite;
+}
+.animate-wander-2 {
+  animation: wander2 80s ease-in-out infinite;
+}
+.animate-wander-3 {
+  animation: wander3 70s ease-in-out infinite;
+}
+
+@keyframes blobFade {
+  0%,
+  100% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.1;
+  }
+}
+@keyframes blobSpin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-fade-random-1 {
+  animation: blobFade 25s ease-in-out infinite;
+}
+.animate-fade-random-2 {
+  animation: blobFade 30s ease-in-out infinite;
+}
+.animate-fade-random-3 {
+  animation: blobFade 40s ease-in-out infinite;
+}
+
+.animate-rotate-slow {
+  animation: blobSpin 100s linear infinite;
+}
+
+@layer utilities {
+  .text-glow {
+    text-shadow:
+      0 0 5px rgba(255, 255, 255, 0.4),
+      0 0 15px rgba(255, 255, 255, 0.2);
+  }
+}
+
+  
+  

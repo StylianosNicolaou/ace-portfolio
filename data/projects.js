@@ -1,0 +1,55 @@
+const projects = [
+  {
+    id: "karate-designs",
+    title: "Karate Designs CN",
+    year: "2025",
+    description:
+      "A modern portfolio website for a creative karate design brand. Includes interactive animations, a dynamic gallery, and pastel neon branding.",
+    link: "https://karatedesignscn.com",
+    image: "/projects/karatedesigns.mp4", // or GIF/MP4
+    tech: [
+      { name: "Next.js", icon: "/icons/nextjs.svg" },
+      { name: "Tailwind CSS", icon: "/icons/tailwind.svg" },
+      { name: "React", icon: "/icons/react.svg" },
+      { name: "EmailJS", icon: "/icons/emailjs.svg" },
+    ],
+    side: "right",
+  },
+
+  {
+    id: "ace-workout",
+    title: "The ACE Gym",
+    year: "2025",
+    side: "left",
+    description: "An interactive workout tracker perfect for gym partners.",
+    link: "https://workout-woad.vercel.app/",
+    image: "/projects/aceGym.mp4",
+    tech: [
+      { name: "HTML5", icon: "/icons/html.svg" },
+      { name: "CSS3", icon: "/icons/css.svg" },
+      { name: "JavaScript", icon: "/icons/javascript.svg" },
+      { name: "React", icon: "/icons/react.svg" },
+      { name: "Tailwind CSS", icon: "/icons/tailwind.svg" },
+      { name: "Firebase", icon: "/icons/firebase.svg" },
+    ],
+    side: "left",
+  },
+  {
+    id: 2,
+    title: "Portfolio Redesign",
+    year: "2022",
+    side: "right",
+    description:
+      "A sleek, interactive portfolio for a design client using GSAP and Tailwind.",
+  },
+  {
+    id: 3,
+    title: "Startup Landing Page",
+    year: "2021",
+    side: "left",
+    description:
+      "Landing page for a fintech startup with animations, form validation, and SEO.",
+  },
+];
+
+export default projects;

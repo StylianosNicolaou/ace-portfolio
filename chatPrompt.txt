@@ -1,0 +1,26 @@
+We are a startup business called ACE consisting of 2 computer science students who want to build websites for businesses, focusing on small ones for the starting period. 
+Build a landing page website which will be used as our portfolio where different websites we build will be linked on. 
+The aim is to send this website to our potential clients so they can view our skills and look at our work. 
+Also, our package prices will be included in a "Packages" page. 
+
+Tech stack:
+next js (js not typescript)
+tailwind css version 3.4.1
+
+Color scheme:
+#5680E9
+#84CEEB
+#5AB9EA
+#C1C8E4
+#8860D0
+
+The name of the brand is ACE. The owners of the brand are Stylianos Nicolaou and Viktorya Voskanyan (soon to be married - no need to include that in the website). 
+
+The website should be:
+1) professional
+2) modern and minimalistic
+3) have some animations and effects
+4) nice flowing and consistent
+5) use Courier new font
+
+The folder structure should consist of a components folder and a pages folder (not app)
