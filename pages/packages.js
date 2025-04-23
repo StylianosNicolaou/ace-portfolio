@@ -20,11 +20,11 @@ export default function PackagesPage() {
         <meta name="description" content="Packages and prices of ACE team." />
       </Head>
       <div
-        className="bg-white/15 backdrop-blur-md"
-        style={{ backgroundImage: `url('/bg2.jpg')` }}
+        className="min-h-screen bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url('/backgrounds/bg2.jpg')` }}
       >
-        {/* Full content on top of glossy background */}
-        <div className="relative z-10 bg-white/15 backdrop-blur-md">
+        {/* Frosted Glass Effect for Page Content */}
+        <div className="relative z-10 bg-white/5 backdrop-blur-md min-h-screen">
           <motion.main
             id="packages"
             variants={fadeIn}

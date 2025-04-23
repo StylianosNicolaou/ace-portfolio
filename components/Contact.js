@@ -22,13 +22,7 @@ export default function Contact() {
   };
 
   return (
-    <SectionWrapper
-      id="contact"
-      className="relative z-10 text-white bg-white/15 backdrop-blur-md"
-    >
-      {/* Glass overlay for background readability */}
-      <div className="bg-white/15 backdrop-blur-md rounded-3xl" />
-
+    <SectionWrapper id="contact" className="relative z-10 text-white">
       {/* Heading with animation */}
       <motion.h2
         initial={{ opacity: 0, y: 40 }}

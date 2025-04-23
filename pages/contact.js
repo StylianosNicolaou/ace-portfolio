@@ -10,12 +10,11 @@ export default function ContactPage() {
         <meta name="description" content="Get in touch with the ACE team." />
       </Head>
 
-      <main
-        className="pt-40 px-6 pb-20 min-h-screen bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: 'url("/backgrounds/bg2.jpg")' }}
-      >
-        <Navbar />
-        <Contact />
+      <main style={{ backgroundImage: 'url("/backgrounds/bg2.jpg")' }}>
+        <div className="bg-white/5 py-10 backdrop-blur-md rounded-none min-h-screen">
+          <Navbar />
+          <Contact />
+        </div>
       </main>
     </>
   );
