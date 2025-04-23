@@ -15,7 +15,7 @@ export default function Timeline() {
       className="relative py-32 px-4 md:px-10 min-h-screen"
     >
       <h2 className="text-center text-4xl md:text-5xl font-bold text-heading mb-20">
-        Our Work Timeline
+        Projects
       </h2>
 
       <div className="relative w-full max-w-5xl mx-auto">

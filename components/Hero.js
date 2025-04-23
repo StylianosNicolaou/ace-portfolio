@@ -1,21 +1,20 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ChevronDown } from "lucide-react";
 import Magnetic from "@/components/Magnetic";
 
 export default function Hero() {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center justify-center text-center px-6 py-32"
+      className="relative z-20 min-h-screen flex items-center justify-center text-center px-6 py-32"
     >
       {/* Glass Container */}
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
-        className="relative z-10 max-w-4xl mx-auto bg-white/10 backdrop-blur-md rounded-3xl border border-white/10 shadow-xl px-10 py-20"
+        className="relative z-30 max-w-4xl mx-auto bg-white/10 backdrop-blur-md rounded-3xl border border-white/10 shadow-xl px-10 py-20"
       >
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
@@ -48,14 +47,6 @@ export default function Hero() {
           </motion.a>
         </Magnetic>
       </motion.div>
-
-      {/* Scroll Cue */}
-      <motion.div
-        initial={{ opacity: 0, y: 5 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 1.5, duration: 1 }}
-        className="absolute bottom-10 left-1/2 transform -translate-x-1/2"
-      ></motion.div>
     </section>
   );
 }

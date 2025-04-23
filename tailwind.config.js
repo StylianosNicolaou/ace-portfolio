@@ -14,9 +14,6 @@ module.exports = {
         peach: "#F7D9C4",
       },
       fontFamily: {
-        //mono: ["Courier New", "monospace"],
-        // sans: ["var(--font-sora)", "sans-serif"],
-        // heading: ["var(--font-sora)", "sans-serif"],
         sans: ["var(--font-montserrat)", "sans-serif"],
         heading: ["var(--font-montserrat)", "sans-serif"],
       },

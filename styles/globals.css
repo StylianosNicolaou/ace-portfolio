@@ -5,6 +5,11 @@
 * {
   cursor: none !important;
 }
+html,
+body,
+#__next {
+  height: 100%;
+}
 
 body {
   @apply font-sans bg-transparent scroll-smooth;
@@ -218,10 +223,10 @@ body {
 @keyframes blobFade {
   0%,
   100% {
-    opacity: 0.3;
+    opacity: 0.15;
   }
   50% {
-    opacity: 0.1;
+    opacity: 0.05;
   }
 }
 @keyframes blobSpin {
@@ -249,11 +254,7 @@ body {
 
 @layer utilities {
   .text-glow {
-    text-shadow:
-      0 0 5px rgba(255, 255, 255, 0.4),
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.4),
       0 0 15px rgba(255, 255, 255, 0.2);
   }
 }
-
-  
-  

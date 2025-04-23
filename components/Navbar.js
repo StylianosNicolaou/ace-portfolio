@@ -88,7 +88,7 @@ export default function Navbar() {
           </Magnetic>
 
           {/* Centered Nav */}
-          <div className="absolute left-1/2 -translate-x-1/2 flex gap-8 items-center text-sm font-medium tracking-wide">
+          <div className=" absolute left-1/2 -translate-x-1/2 flex gap-8 items-center text-sm font-medium tracking-wide">
             {pathname === "/" ? (
               // ✅ Home page: show dropdown
               <div
