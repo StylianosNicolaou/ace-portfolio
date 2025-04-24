@@ -42,7 +42,7 @@ const projects = [
     side: "left",
     description: "COMING SOON! 2 player games both locally and online ",
     //link: "https://workout-woad.vercel.app/",
-    image: "/projects/aceGym.mp4",
+    //image: "/projects/aceGym.mp4",
     tech: [
       { name: "React", icon: "/icons/react.svg" },
       { name: "Tailwind CSS", icon: "/icons/tailwind.svg" },
@@ -51,6 +51,24 @@ const projects = [
       { name: "Socket.io", icon: "/icons/socketio.svg" },
     ],
     side: "right",
+  },
+  {
+    id: "ace-web_application_form",
+    title: "Application Form",
+    year: "2025",
+    side: "left",
+    description: "A simple website for clients to easily fill out the application form and submit the result directly to the financial manager",
+    link: "https://workout-woad.vercel.app/",
+    image: "/projects/aceGym.mp4",
+    tech: [
+      { name: "HTML5", icon: "/icons/html.svg" },
+      { name: "CSS3", icon: "/icons/css.svg" },
+      { name: "JavaScript", icon: "/icons/javascript.svg" },
+      { name: "React", icon: "/icons/react.svg" },
+      { name: "Tailwind CSS", icon: "/icons/tailwind.svg" },
+      { name: "Firebase", icon: "/icons/firebase.svg" },
+    ],
+    side: "left",
   },
 ];
 
