@@ -34,6 +34,24 @@ const projects = [
     ],
     side: "left",
   },
+
+  {
+    id: "2PL<ACE/>R GAMES",
+    title: "2 PL<ACE/>R GAMES",
+    year: "2025",
+    side: "left",
+    description: "COMING SOON! 2 player games both locally and online ",
+    //link: "https://workout-woad.vercel.app/",
+    image: "/projects/aceGym.mp4",
+    tech: [
+      { name: "React", icon: "/icons/react.svg" },
+      { name: "Tailwind CSS", icon: "/icons/tailwind.svg" },
+      { name: "Node.js", icon: "/icons/nodejs.svg" },
+      { name: "Express", icon: "/icons/express.svg" },
+      { name: "Socket.io", icon: "/icons/socketio.svg" },
+    ],
+    side: "right",
+  },
 ];
 
 export default projects;
