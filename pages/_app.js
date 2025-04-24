@@ -26,7 +26,7 @@ export default function MyApp({ Component, pageProps }) {
           name="description"
           content="We build stunning, animated websites for modern businesses."
         />
-        <link rel="icon" sizes="64x64" href="/favicon.ico" />
+        <link rel="icon" sizes="64x64" href="/favicon1.png" />
       </Head>
       <div className="relative min-h-screen overflow-x-hidden font-mono scroll-smooth text-white">
         {/* Background Image Layer */}
