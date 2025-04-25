@@ -12,7 +12,7 @@ const founders = [
   },
   {
     name: "Viktorya Voskanyan",
-    role: "Co-Founder / Designer",
+    role: "Co-Founder / Developer",
     bio: "Viktorya brings interfaces to life with her sense of aesthetics, animations, and UX focus that balances function and style.",
     image: "/team/viktorya.jpg",
   },
@@ -55,11 +55,6 @@ export default function About() {
             transition={{ delay: i * 0.2, duration: 0.8 }}
             className="bg-white/10 backdrop-blur-md border border-white/10 rounded-2xl p-6 flex flex-col items-center text-center shadow-xl hover:shadow-[0_8px_32px_rgba(0,0,0,0.3)] transition"
           >
-            <img
-              src={person.image}
-              alt={person.name}
-              className="w-24 h-24 rounded-full object-cover border border-white/20 mb-4"
-            />
             <h3 className="text-heading text-xl font-semibold">
               {person.name}
             </h3>
