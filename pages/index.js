@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import About from "../components/About";
 import Footer from "../components/Footer";
-import Timeline from "../components/Timeline";
+import ProjectGrid from "../components/ProjectGrid";
 
 export default function Home() {
   return (
@@ -13,7 +13,7 @@ export default function Home() {
       <main>
         <Hero />
         <About />
-        <Timeline />
+        <ProjectGrid />
       </main>
       <Footer />
     </>

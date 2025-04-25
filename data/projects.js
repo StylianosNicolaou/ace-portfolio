@@ -36,8 +36,8 @@ const projects = [
   },
 
   {
-    id: "2PL<ACE/>R GAMES",
-    title: "2 PL<ACE/>R GAMES",
+    id: "arcACE",
+    title: "arcACE",
     year: "2025",
     side: "left",
     description: "WORK IN PROGRESS! 2 player games both locally and online ",
@@ -57,7 +57,8 @@ const projects = [
     title: "WORK IN PROGRESS! Application Form",
     year: "2025",
     side: "left",
-    description: "A simple website for clients to easily fill out the application form and submit the result directly to the financial manager",
+    description:
+      "A simple website for clients to easily fill out the application form and submit the result directly to the financial manager",
     //link: "https://workout-woad.vercel.app/",
     //image: "/projects/aceGym.mp4",
     // tech: [
