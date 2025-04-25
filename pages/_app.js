@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { AnimatePresence } from "framer-motion";
 import FloatingSVGBlobs from "@/components/FloatingSVGBlobs";
 import CustomCursor from "@/components/CustomCursor";
+import { Analytics } from "@vercel/analytics/react";
 
 export default function MyApp({ Component, pageProps }) {
   const [scrolled, setScrolled] = useState(false);
@@ -48,7 +49,7 @@ export default function MyApp({ Component, pageProps }) {
 
         <CustomCursor />
         <FloatingSVGBlobs />
-
+        <Analytics />
         {/* Page Transitions */}
         <AnimatePresence mode="wait">
           <Component {...pageProps} />
