@@ -15,9 +15,6 @@ export default function Home() {
         <section id="home">
           <Hero />
         </section>
-        <section id="coding">
-          <CodingStation />
-        </section>
         <section id="about">
           <About />
         </section>
