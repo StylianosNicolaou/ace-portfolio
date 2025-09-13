@@ -11,9 +11,9 @@ const founders = [
     image: "/team/stylianos.jpg",
   },
   {
-    name: "Viktorya Voskanyan",
+    name: "Victoria Voskanyan",
     role: "Co-Founder / Developer",
-    bio: "Viktorya brings interfaces to life with her sense of aesthetics, animations, and UX focus that balances function and style.",
+    bio: "Victoria brings interfaces to life with her sense of aesthetics, animations, and UX focus that balances function and style.",
     image: "/team/viktorya.jpg",
   },
 ];

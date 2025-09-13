@@ -56,7 +56,7 @@ const projects = [
     year: "2025",
     description: "A sample landing page for the Thrifthood shop.",
     link: "https://thrifthood.vercel.app/",
-    image: "/projects/thrifthood.mp4",
+    image: "/projects/thrifthood_template.mp4",
     tech: [
       { name: "HTML5", icon: "/icons/html.svg" },
       { name: "Tailwind CSS", icon: "/icons/tailwind.svg" },
@@ -65,6 +65,17 @@ const projects = [
       { name: "Figma", icon: "/icons/figma.svg" },
       { name: "Next.js", icon: "/icons/nextjs.svg" },
     ],
+  },
+
+  {
+    id: "thrifthood",
+    title: "Thrifthood Shopify",
+    year: "2025",
+    description:
+      "A simple shopify e-commerce website. Users can shop online or view the items and buy from the store.",
+    link: "https://thrifthood.vercel.app/",
+    image: "/projects/ThriftHood.mp4",
+    tech: [{ name: "Shopify", icon: "/icons/shopify.svg" }],
   },
 ];
 

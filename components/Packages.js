@@ -26,7 +26,7 @@ const features = [
 const packages = [
   {
     name: "Base Website",
-    price: "€200",
+    price: "€300",
     values: [
       "Up to 3 pages",
       "No backend",
@@ -37,12 +37,12 @@ const packages = [
       "-",
       "-",
       "✔",
-      "€50/year",
+      "€20/month",
     ],
   },
   {
     name: "Medium Scale",
-    price: "€250 – €350",
+    price: "€350 – €550",
     values: [
       "Up to 5 pages",
       "Contact form / Light CMS",
@@ -53,12 +53,12 @@ const packages = [
       "-",
       "Optional",
       "✔",
-      "€70/year",
+      "€50/month",
     ],
   },
   {
     name: "Full Scale",
-    price: "€500 – €1500+",
+    price: "€600 – €3500+",
     values: [
       "Unlimited",
       "Advanced backend / Admin panel",
@@ -69,7 +69,7 @@ const packages = [
       "✔",
       "✔",
       "✔",
-      "20% of package",
+      "10% of package/month",
     ],
   },
 ];
