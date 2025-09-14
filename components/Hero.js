@@ -21,8 +21,8 @@ export default function Hero() {
           transition={{ delay: 0.2, duration: 0.8 }}
           className="text-3xl sm:text-4xl md:text-6xl text-heading font-extrabold leading-tight tracking-tight"
         >
-          We build websites
-          <br className="hidden md:block" /> that grow your business.
+          You think it,
+          <br className="hidden md:block" /> we build it.
         </motion.h1>
 
         <motion.p
@@ -32,7 +32,7 @@ export default function Hero() {
           className="mt-6 text-base sm:text-lg md:text-xl text-body leading-relaxed"
         >
           ACE is a digital studio by Stylianos & Viktorya. We create sleek,
-          animated, performance-first websites for modern businesses.
+          animated, customised websites for modern businesses.
         </motion.p>
       </motion.div>
     </section>
