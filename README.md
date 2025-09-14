@@ -1,5 +1,72 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Contact Form Setup (EmailJS)
+
+To enable the contact form functionality with auto-reply, you need to set up EmailJS:
+
+### 1. Create EmailJS Account
+
+- Go to [EmailJS](https://www.emailjs.com/) and create an account
+- Create a new service (Gmail, Outlook, etc.)
+
+### 2. Create Email Templates
+
+#### Main Contact Template (for ACE team)
+
+Create a template with these variables:
+
+- `{{from_name}}` - Sender's name
+- `{{from_email}}` - Sender's email
+- `{{to_name}}` - Recipient name (ACE Team)
+- `{{message}}` - Message content
+- `{{current_date}}` - Current date (optional)
+
+#### Auto-Reply Template (for users)
+
+Create a second template with these variables:
+
+- `{{from_name}}` - User's name
+- `{{from_email}}` - User's email
+- `{{to_name}}` - User's name (for personalization)
+- `{{message}}` - User's original message
+
+**Template Content:** Use the provided templates in `/email-templates/` folder:
+
+- `main-contact-template.html` - Main contact email (HTML)
+- `main-contact-template.txt` - Main contact email (Text)
+- `auto-reply-template.html` - Auto-reply email (HTML)
+- `auto-reply-template.txt` - Auto-reply email (Text)
+
+### 3. Environment Variables
+
+Create a `.env.local` file in the root directory with:
+
+```
+NEXT_PUBLIC_EMAILJS_SERVICE_ID=your_service_id
+NEXT_PUBLIC_EMAILJS_TEMPLATE_ID=your_main_template_id
+NEXT_PUBLIC_EMAILJS_AUTO_REPLY_TEMPLATE_ID=your_auto_reply_template_id
+NEXT_PUBLIC_EMAILJS_PUBLIC_KEY=your_public_key
+```
+
+### 4. Template Setup in EmailJS
+
+1. **Main Contact Template:**
+
+   - Copy content from `email-templates/main-contact-template.html`
+   - Paste into your main EmailJS template
+   - Configure variables: `{{from_name}}`, `{{from_email}}`, `{{message}}`
+
+2. **Auto-Reply Template:**
+
+   - Copy content from `email-templates/auto-reply-template.html`
+   - Paste into your auto-reply EmailJS template
+   - Configure variables: `{{from_name}}`, `{{from_email}}`, `{{message}}`
+
+3. **Testing:**
+   - Test both templates to ensure they work correctly
+   - Verify that auto-reply is sent to the user
+   - Verify that main email is sent to your team
+
 ## Getting Started
 
 First, run the development server:

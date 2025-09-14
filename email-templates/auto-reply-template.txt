@@ -1,0 +1,31 @@
+Hi {{from_name}}! 👋
+
+Thank you for reaching out to ACE! We've received your message and are excited to learn more about your project.
+
+WHAT HAPPENS NEXT?
+• We'll review your message within 24 hours
+• Our team will get back to you with a detailed response
+• We'll discuss your project requirements and timeline
+• If it's a good fit, we'll schedule a free consultation call
+
+We're passionate about creating exceptional digital experiences and look forward to potentially working together!
+
+YOUR ORIGINAL MESSAGE:
+From: {{from_name}} ({{from_email}})
+Message: {{message}}
+
+NEED IMMEDIATE ASSISTANCE?
+📧 Email: hello@ace-portfolio.com
+💬 Response Time: Within 24 hours
+🌐 Website: ace-portfolio.com
+
+Visit our portfolio: https://ace-portfolio.com
+
+CONNECT WITH US:
+• GitHub: https://github.com/ace-team
+• LinkedIn: https://linkedin.com/company/ace-team
+• Twitter: https://twitter.com/ace_team
+
+---
+This is an automated response. Please do not reply to this email.
+© 2024 ACE. All rights reserved.

@@ -14,6 +14,7 @@ const projects = [
       { name: "React", icon: "/icons/react.svg" },
       { name: "Next.js", icon: "/icons/nextjs.svg" },
       { name: "EmailJS", icon: "/icons/emailjs.svg" },
+      { name: "Stripe", icon: "/icons/stripe.svg" },
     ],
   },
 

@@ -1,0 +1,13 @@
+🎯 NEW CONTACT FORM SUBMISSION - ACE Portfolio
+
+👤 CONTACT INFORMATION:
+Name: {{from_name}}
+Email: {{from_email}}
+Date: {{current_date}}
+
+💬 MESSAGE:
+{{message}}
+
+---
+Reply directly to this email to respond to {{from_name}}.
+This email was automatically generated from the ACE Portfolio contact form.
