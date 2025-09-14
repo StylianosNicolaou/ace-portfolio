@@ -6,7 +6,7 @@ const projects = [
     description:
       "A modern portfolio website for a creative karate design brand. Includes interactive animations, a dynamic gallery, and pastel neon branding.",
     link: "https://karatedesignscn.com",
-    image: "/projects/karatedesigns.mp4", // or GIF/MP4
+    image: "/projects/karatedesigns.mp4",
     tech: [
       { name: "HTML5", icon: "/icons/html.svg" },
       { name: "Tailwind CSS", icon: "/icons/tailwind.svg" },
@@ -73,9 +73,26 @@ const projects = [
     year: "2025",
     description:
       "A simple shopify e-commerce website. Users can shop online or view the items and buy from the store.",
-    link: "https://thrifthood.vercel.app/",
+    // link: "https://thrifthood.vercel.app/",
     image: "/projects/ThriftHood.mp4",
     tech: [{ name: "Shopify", icon: "/icons/shopify.svg" }],
+  },
+
+  {
+    id: "posa-xrosto",
+    title: "Posa-Xrosto Mobile Web-App",
+    year: "2025",
+    description:
+      "Split the bill fast and easy. (Receipt scanning feature coming soon)",
+    // link: "https://thrifthood.vercel.app/",
+    image: "/projects/posa-xrosto.mp4",
+    tech: [
+      { name: "HTML5", icon: "/icons/html.svg" },
+      { name: "Tailwind CSS", icon: "/icons/tailwind.svg" },
+      { name: "TypeScript", icon: "/icons/typescript.svg" },
+      { name: "React", icon: "/icons/react.svg" },
+      { name: "Next.js", icon: "/icons/nextjs.svg" },
+    ],
   },
 ];
 
