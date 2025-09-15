@@ -75,7 +75,7 @@ const projects = [
     description:
       "A simple shopify e-commerce website. Users can shop online or view the items and buy from the store.",
     // link: "https://thrifthood.vercel.app/",
-    image: "/projects/ThriftHood.mp4",
+    image: "/projects/thrifthood.mp4",
     tech: [{ name: "Shopify", icon: "/icons/shopify.svg" }],
   },
 

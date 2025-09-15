@@ -16,7 +16,7 @@ export default function ProjectGrid() {
         transition={{ duration: 0.8 }}
         className="text-center text-3xl sm:text-4xl md:text-5xl font-bold text-heading mb-20"
       >
-        Featured Projects
+        Our Projects
       </motion.h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 place-items-center max-w-7xl mx-auto">
