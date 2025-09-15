@@ -70,7 +70,7 @@ export default function Navbar() {
         </div>
 
         {/* Layout: Logo left, nav centered absolutely */}
-        <div className="relative w-full flex items-center justify-between">
+        <div className="relative w-full flex items-center justify-between gap-4 md:gap-0">
           {/* Left: ACE logo */}
           <Magnetic>
             <motion.div whileHover={{ rotate: [0, 5, -5, 3, 0], scale: 1.05 }}>
@@ -82,13 +82,103 @@ export default function Navbar() {
                 offset={-100}
                 className="text-heading text-2xl font-bold tracking-tight cursor-pointer"
               >
-                <span className="font-mono">ACE</span>
+                <span className="font-mono">&lt;ACE/&gt;</span>
               </ScrollLink>
             </motion.div>
           </Magnetic>
 
           {/* Centered Nav */}
-          <div className=" absolute left-1/2 -translate-x-1/2 flex gap-8 items-center text-sm font-medium tracking-wide">
+          <div className="absolute left-1/2 -translate-x-1/2 md:flex hidden gap-8 items-center text-sm font-medium tracking-wide">
+            {pathname === "/" ? (
+              // ✅ Home page: show dropdown
+              <div
+                className="relative"
+                onMouseEnter={() => setHoveringDropdown(true)}
+                onMouseLeave={() => setHoveringDropdown(false)}
+              >
+                <Magnetic>
+                  <button className="flex items-center gap-1 cursor-pointer text-body hover:text-purple transition-colors">
+                    <span className="px-1 font-semibold text-glow capitalize">
+                      {activeItem}
+                    </span>
+                    <FaChevronDown
+                      className={`transition-transform ${
+                        hoveringDropdown ? "rotate-180" : ""
+                      }`}
+                    />
+                  </button>
+                </Magnetic>
+
+                <AnimatePresence>
+                  {hoveringDropdown && (
+                    <motion.ul
+                      initial={{ opacity: 0, y: -10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: -10 }}
+                      className="absolute top-full mt-2 bg-white/10 backdrop-blur-md text-body border border-white/20 rounded-xl overflow-hidden shadow-2xl z-50"
+                    >
+                      {HOME_DROPDOWN_ITEMS.map(({ label, to }) => (
+                        <li key={label}>
+                          <ScrollLink
+                            to={to}
+                            smooth={true}
+                            duration={500}
+                            offset={-100}
+                            className={`block px-4 py-2 whitespace-nowrap cursor-pointer transition hover:bg-white/10 ${
+                              activeItem === label
+                                ? "text-glow font-semibold"
+                                : "text-body"
+                            }`}
+                          >
+                            {label}
+                          </ScrollLink>
+                        </li>
+                      ))}
+                    </motion.ul>
+                  )}
+                </AnimatePresence>
+              </div>
+            ) : (
+              // ❌ Not home: show "Home" link to /
+              <Magnetic>
+                <Link
+                  href="/"
+                  className="hover:text-purple transition-colors text-body"
+                >
+                  Home
+                </Link>
+              </Magnetic>
+            )}
+
+            {/* Static links */}
+            <Magnetic>
+              <Link
+                href="/packages"
+                className={`transition-colors text-body ${
+                  pathname === "/packages"
+                    ? "text-glow font-semibold"
+                    : "hover:text-purple"
+                }`}
+              >
+                Packages
+              </Link>
+            </Magnetic>
+            <Magnetic>
+              <Link
+                href="/contact"
+                className={`transition-colors text-body ${
+                  pathname === "/contact"
+                    ? "text-glow font-semibold"
+                    : "hover:text-purple"
+                }`}
+              >
+                Contact
+              </Link>
+            </Magnetic>
+          </div>
+
+          {/* Mobile Nav - Right aligned */}
+          <div className="flex md:hidden gap-4 items-center text-sm font-medium tracking-wide mr-10">
             {pathname === "/" ? (
               // ✅ Home page: show dropdown
               <div

@@ -27,7 +27,47 @@ export default function MyApp({ Component, pageProps }) {
           name="description"
           content="We build stunning, animated websites for modern businesses."
         />
-        <link rel="icon" sizes="64x64" href="/favicon1.png" />
+
+        {/* Favicon Configuration */}
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon1.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon1.png" />
+        <link rel="apple-touch-icon" href="/favicon1.png" />
+
+        {/* Open Graph Meta Tags for Social Media */}
+        <meta property="og:title" content="ACE" />
+        <meta
+          property="og:description"
+          content="We build stunning, animated websites for modern businesses."
+        />
+        <meta
+          property="og:url"
+          content="https://ace-portfolio-theta.vercel.app/"
+        />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:image"
+          content="https://ace-portfolio-theta.vercel.app/favicon1.png"
+        />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:site_name" content="ACE Portfolio" />
+
+        {/* Twitter Card Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="ACE" />
+        <meta
+          name="twitter:description"
+          content="We build stunning, animated websites for modern businesses."
+        />
+        <meta
+          name="twitter:image"
+          content="https://ace-portfolio-theta.vercel.app/favicon1.png"
+        />
+
+        {/* Additional Meta Tags */}
+        <meta name="theme-color" content="#000000" />
+        <meta name="msapplication-TileImage" content="/favicon1.png" />
       </Head>
       <div className="relative min-h-screen overflow-x-hidden font-mono scroll-smooth text-white">
         {/* Background Image Layer */}
